@@ -8,8 +8,7 @@ export default function App() {
       <StatusBar style="auto" />
     </View>
   );
-}
-
+}//dsfjkls
 const styles = StyleSheet.create({
   container: {
     flex: 1,
