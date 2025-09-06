@@ -36,22 +36,10 @@ export default function LoginScreen() {
         navigation.replace('Home');
       } catch (error) {
         console.log('Home not found, trying other routes...');
-        try {
-          navigation.replace('Main');
-        } catch (error2) {
-          try {
-            navigation.replace('Dashboard');
-          } catch (error3) {
-            try {
-              navigation.replace('TabNavigator');
-            } catch (error4) {
-              console.error('Could not find any valid route to navigate to');
-            }
-          }
-        }
       }
+      
     }
-  }, [token, navigation]);
+  }, [token]);
 
   const checkExistingToken = async () => {
     try {
